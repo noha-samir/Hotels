@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <h3 align="center">
 <b>Hotel Search</b></h3>
 
