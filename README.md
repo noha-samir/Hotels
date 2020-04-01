@@ -13,18 +13,16 @@
  - install node_modules "npm install"
  - start server "npm start"
 
-### Prerequisites
-
-What things you need to install the software and how to install them.
+### Dependencies
 
 - [Nodemon](https://nodemon.io/) nodemon for npm run watch command
-- [async]
-- [babel]
-- [babel-node]
-- [compression]
-- [express]
-- [request]
-- [babel-cli]
+- [async](https://www.npmjs.com/package/async)
+- [babel](https://www.npmjs.com/package/babel-install)
+- [babel-node](https://www.npmjs.com/package/babel-node)
+- [compression](https://www.npmjs.com/package/compression)
+- [express](https://expressjs.com/)
+- [request](https://www.npmjs.com/package/request)
+- [babel-cli](https://www.npmjs.com/package/babel-cli)
 
 ### Installing Env
 Development env must contains 
