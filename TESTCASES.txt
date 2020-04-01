@@ -1,0 +1,152 @@
+1 ) No filtering ,No sorting
+Body >> {
+	 "name":"",
+     "city":"",
+     "lowPriceRange":null,
+     "highPriceRange":null,
+     "fromDate":"",
+     "toDate":"",
+     "sortedByName":false,
+     "sortedByPrice":false,
+     "ascSort":true
+}
+RESPONSE >> list of all hotels
+
+----------------------------------------------------------------------------
+
+2 ) No filtering ,sort by name asc
+Body >> {
+	 "name":"",
+     "city":"",
+     "lowPriceRange":null,
+     "highPriceRange":null,
+     "fromDate":"",
+     "toDate":"",
+     "sortedByName":true,
+     "sortedByPrice":false,
+     "ascSort":true
+}
+RESPONSE >> list of all hotels sorted by name asc
+
+----------------------------------------------------------------------------
+
+3 ) No filtering ,sort by price asc
+Body >> {
+	 "name":"",
+     "city":"",
+     "lowPriceRange":null,
+     "highPriceRange":null,
+     "fromDate":"",
+     "toDate":"",
+     "sortedByName":false,
+     "sortedByPrice":true,
+     "ascSort":true
+}
+RESPONSE >> list of all hotels sorted by price asc
+
+----------------------------------------------------------------------------
+
+4 ) No filtering ,sort by price and name asc
+Body >> {
+	 "name":"",
+     "city":"",
+     "lowPriceRange":null,
+     "highPriceRange":null,
+     "fromDate":"",
+     "toDate":"",
+     "sortedByName":true,
+     "sortedByPrice":true,
+     "ascSort":true
+}
+RESPONSE >> Error "Select only one choice of sorting"
+
+----------------------------------------------------------------------------
+
+5 ) filtering by name ,sort by name asc
+Body >> {
+	 "name":"Concorde Hotel",
+     "city":"",
+     "lowPriceRange":null,
+     "highPriceRange":null,
+     "fromDate":"",
+     "toDate":"",
+     "sortedByName":true,
+     "sortedByPrice":false,
+     "ascSort":true
+}
+RESPONSE >> list of all hotels of name 'Concorde' sorted by name asc
+
+----------------------------------------------------------------------------
+
+6 ) filtering by price range and date range,sort by name asc
+Body >> {
+	 "name":"",
+     "city":"",
+     "lowPriceRange":70,
+     "highPriceRange":100,
+     "fromDate":"05-12-2020",
+     "toDate":"08-12-2020",
+     "sortedByName":true,
+     "sortedByPrice":false,
+     "ascSort":true
+}
+RESPONSE >> list of all hotels of price range [70:100] and available btw [05-12-2020 : 08-12-2020] sorted by name asc
+In this case the response will be >>[
+    {
+        "name": "Concorde Hotel",
+        "price": 79.4,
+        "city": "Manila",
+        "availability": [
+            {
+                "from": "10-10-2020",
+                "to": "19-10-2020"
+            },
+            {
+                "from": "22-10-2020",
+                "to": "22-11-2020"
+            },
+            {
+                "from": "03-12-2020",
+                "to": "20-12-2020"
+            }
+        ]
+    },
+    {
+        "name": "Le Meridien",
+        "price": 89.6,
+        "city": "london",
+        "availability": [
+            {
+                "from": "01-10-2020",
+                "to": "12-10-2020"
+            },
+            {
+                "from": "05-10-2020",
+                "to": "10-11-2020"
+            },
+            {
+                "from": "05-12-2020",
+                "to": "28-12-2020"
+            }
+        ]
+    },
+    {
+        "name": "Rotana Hotel",
+        "price": 80.6,
+        "city": "cairo",
+        "availability": [
+            {
+                "from": "10-10-2020",
+                "to": "12-10-2020"
+            },
+            {
+                "from": "25-10-2020",
+                "to": "10-11-2020"
+            },
+            {
+                "from": "05-12-2020",
+                "to": "18-12-2020"
+            }
+        ]
+    }
+]
