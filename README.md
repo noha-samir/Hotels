@@ -60,7 +60,3 @@ Test cases in TESTCASES file
 
 - [Express](https://expressjs.com/) - Server Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
-=======
-# Hotels
-Search hotels without using any search engines 
->>>>>>> 38af06ba049b8da5d0791182a78e05f08ab6cc9e
