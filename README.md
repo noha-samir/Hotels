@@ -9,9 +9,9 @@
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
- - clone project
- - install node_modules "npm install"
- - start server "npm start"
+ - clone project.
+ - install node_modules "npm install".
+ - start server "npm start".
 
 ### Dependencies
 
