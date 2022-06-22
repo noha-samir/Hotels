@@ -4,7 +4,7 @@
   "description": "The objective of this challenge is to hit an endpoint containing the list of hotels and perform some actions on the result. The challenge must be solved NodeJs.",
   "main": "index.js",
   "dependencies": {
-    "async": "^3.2.0",
+    "async": "^3.2.2",
     "babel": "^6.23.0",
     "babel-node": "0.0.1-security",
     "compression": "^1.7.4",
